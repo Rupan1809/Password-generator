@@ -1,17 +1,17 @@
 import random
-import math
+
  
 alpha = "abcdefghijklmnopqrstuvwxyz"
 num = "0123456789"
 special = "@#$%&*"
  
 # pass_len=random.randint(8,13)  #without User INput
-pass_len = int(input("Enter Password Length : "))
+passlength= int(input("Enter Password Length : "))
  
 # length of password by 50-30-20 formula
-alpha_len = pass_len//2
-num_len = math.ceil(pass_len*30/100)
-special_len = pass_len-(alpha_len+num_len)
+alpha_len = passlength//2
+num_len = passlength*30//100
+special_len =passlength-(alpha_len+num_len)
  
  
 password = []
